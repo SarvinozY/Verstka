@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 100%;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+:root {
+    --iconColor: #FE9563;
+    --textColor: #000000;
+    --firstColor: rgba(255, 251, 240, 1);
+    --secondColor: rgba(247, 230, 204, 1);
+    --backgroundColor: rgba(255, 251, 240, 1);
+    --titleColor: rgba(69, 90, 100, 1);
+
+}
+
+/* HEADEAR */
+
+.header {
+    width: 100%;
+    height: 700px;
+    /* Mana bu yerda 720px qilsam  */
+    object-fit: cover;
+    background-image: url(./images//background.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.header_nav,
+.nav_navbar,
+.ul,
+.main_hero {
+    display: flex;
+}
+
+.header_nav {
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.li,
+.button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.link {
+    color: var(--textColor);
+}
+
+.button {
+    margin-left: 20px;
+    padding: 8px 20px;
+    background-color: transparent;
+    border: 3px solid var(--iconColor);
+    border-radius: 5px;
+    color: var(--textColor);
+
+}
+
+.button:hover {
+    background-color: var(--iconColor);
+}
+
+.li {
+    padding-left: 20px;
+
+}
+
+.fa-solid {
+    color: var(--iconColor);
+    padding-left: 4px;
+    vertical-align: top;
+}
+
+/* HEADER */
+/* MAIN */
+.main {
+    max-width: 100%;
+    background-image: url(./images/fullback.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.main_hero {
+    justify-content: space-between;
+}
+
+.title {
+    width: 414px;
+    color: var(--titleColor);
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 700;
+}
+
+.text {
+    width: 449px;
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(83, 83, 89, 1);
+
+}
+
+/* MAIN */

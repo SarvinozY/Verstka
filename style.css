@@ -28,9 +28,8 @@
 /* HEADEAR */
 
 .header {
-    width: 100%;
+    min-width: 100%;
     height: 700px;
-    /* Mana bu yerda 720px qilsam  */
     object-fit: cover;
     background-image: url(./images//background.svg);
     background-repeat: no-repeat;
@@ -41,7 +40,11 @@
 .header_nav,
 .nav_navbar,
 .ul,
-.main_hero {
+.main_hero,
+.btn_video,
+.main_button,
+
+.free_trials {
     display: flex;
 }
 
@@ -89,7 +92,7 @@
 /* HEADER */
 /* MAIN */
 .main {
-    max-width: 100%;
+    min-width: 100%;
     background-image: url(./images/fullback.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -97,7 +100,8 @@
 }
 
 .main_hero {
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 30px 0;
 }
 
 .title {
@@ -118,4 +122,85 @@
 
 }
 
+.main_btn {
+    padding: 9px 25px;
+    border-radius: 6px;
+    background-color: var(--titleColor);
+    border: transparent;
+    color: var(--backgroundColor);
+    font-weight: bold;
+    margin: 23px 25px 18px 0;
+
+}
+
+.main_btn:hover {
+    background-color: transparent;
+    border: 3px solid var(--titleColor);
+    color: var(--titleColor);
+}
+
+.btn_video {
+    align-items: center;
+    color: var(--titleColor);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn_video>img {
+    padding-right: 10px;
+}
+
+.free_link {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--titleColor);
+    font-weight: bold;
+}
+
+.line {
+    width: 2px;
+    height: 14px;
+    background-color: var(--iconColor);
+    margin: 0 6px;
+}
+
 /* MAIN */
+/* SECTION */
+.section_one_hero {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.card {
+    width: 255px;
+    height: 210px;
+    background: linear-gradient(300.2deg, #F5F2EB 1.26%, #F7E6CB 100.49%);
+    border-radius: 44px;
+    padding: 50px;
+    text-align: center;
+}
+
+.card>img {
+    width: 76px;
+    height: 76px;
+}
+
+.section_title {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 26px;
+    color: rgba(55, 71, 79, 1);
+
+}
+
+.section_text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(55, 71, 79, 1);
+    padding: 8px 2px;
+    margin: px 0;
+}
+
+/* SECTION */
